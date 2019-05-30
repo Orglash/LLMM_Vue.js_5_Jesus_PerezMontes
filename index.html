@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js 5 Jesus Perez Montes</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body id="app" class="text center" v-bind:style="{background: color}">
+	<div>
+		<h1 style="font-family: 'Josefin Sans', sans-serif;">Prueba un color</h1>
+		<div class="color">			
+			<input type="text" v-bind:style= "{color:color}" v-model= "color" maxlength="7" placeholder="#000000">
+			<input type="color"v-model="color"> 
+		</div>		
+	</div>
+</body>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+<script>
+	new Vue ({
+		el: '#app',
+		data:{color:" "}
+	});
+</script>
+</html>
